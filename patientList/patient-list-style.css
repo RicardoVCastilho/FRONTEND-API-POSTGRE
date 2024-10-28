@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(3, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#patient-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#patient-list li {
+    background-color: #f9f9f9;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#patient-list li:hover {
+    background-color: var(--primary-color-light);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 250px;
+}
+
+button:hover {
+    background-color: var(--primary-color-darker);
+}
+
+a {
+    text-decoration: none;
+    color: #fff; /* Cor do texto do link no botão */
+}

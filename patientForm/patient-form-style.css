@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(3, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container h1 {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.container h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-column {
+    flex: 1;
+    margin-right: 20px;   
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 30px;
+    padding: 0 20px;
+}
+
+input[type="checkbox"] {
+    width: 2.0rem;
+    height: 2.0rem;
+    margin-right: 10rem;
+    padding: 0;
+    accent-color: #4caf50;
+}
+
+.contagious-check {
+    display: flex;
+    align-items: center;
+}
+
+form input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--primary-color-darker);
+}

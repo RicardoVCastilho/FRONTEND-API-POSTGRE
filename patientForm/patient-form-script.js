@@ -18,7 +18,7 @@ async function submitForm(event) {
     };
 
     try {
-        const response = await fetch('https://mascots-test-api.onrender.com/all-patients', {
+        const response = await fetch('https://mascots-test-api.onrender.com/api/patients', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

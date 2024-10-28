@@ -92,3 +92,13 @@ form button {
 button:hover {
     background-color: var(--primary-color-darker);
 }
+
+button a {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 5px;
+}

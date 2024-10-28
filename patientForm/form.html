@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./patient-form-style.css">
+    <title>Clínica Veterinária</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Cadastro de Pacientes</h1>
+        <h2>Cadastre aqui o seu Paciente:</h2>
+        <form id="patient-form" method="POST">
+            <div class="form-group">
+                <div class="input-column">
+                    <label for="admission"> Data de admissão:</label>
+                    <input type="text" id="admission" name="admission" required>
+    
+                    <label for="injuries"> Lesões:</label>
+                    <input type="text" id="injuries" name="injuries" required>
+    
+                    <label for="pet_id"> ID do Pet:</label>
+                    <input type="number" id="pet_id"  name="pet_id">
+                </div>
+
+                <div class="input-column">
+                    <label for="at_arrival_patient_status">Status do paciente na Chegada:</label>
+                    <input type="text" id="at_arrival_patient_status" name="at_arrival_patient_status" required>
+    
+                    <label for="medicated_at_arrival">Medicado na chegada:</label>
+                    <input type="text" id="medicated_at_arrival" name="medicated_at_arrival" required>
+
+                    <div class="contagious-check">
+                        <label for="contagious">Contagioso:</label>
+                        <input type="checkbox" id="contagious" name="contagious">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button"><p>Cadastrar</p></button>
+        </form>
+        <button><a href="../index.html">Ver todos os pacientes cadastrados</a></button>
+    </section>
+
+    <script src="./patient-form-script.js"></script>
+</body>
+</html>

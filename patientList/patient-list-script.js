@@ -11,12 +11,17 @@ async function fetchPatients() {
         }
 
         const patients = await response.json();
-        const patientList = document.getElementById('patient-list');
+        const patientList = document.getElementById('patients');
         patientList.innerHTML = '';
 
         patients.forEach(patient => {
             const listItem = document.createElement('li');
-            listItem.textContent = `ID: ${patient.pet_id}, Admissão: ${patient.admission}, Lesões:${patient.injuries}`;
+            listItem.innerHTML = `
+            <strong>ID:</strong> ${patient.pet_id} <br>
+            <strong>Admissão:</strong> ${new Date(patient.admission).toLocaleString('pt-BR')} <br>
+            <strong>Lesões:</strong> ${patient.injuries ? patient.injuries : 'Nenhuma'} <br>
+            <strong>Contagioso:</strong> ${patient.contagious ? 'Sim' : 'Não'}
+        `;
             patientList.appendChild(listItem);
         });
     } catch (error) {

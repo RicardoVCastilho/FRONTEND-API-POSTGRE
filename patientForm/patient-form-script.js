@@ -1,7 +1,8 @@
 async function submitForm(event) {
     event.preventDefault();
 
-    const admission = document.getElementById('admission').value;
+    const admissionInput = document.getElementById('admission').value;
+    const admissionDate = new Date(admissionInput).toISOString();
     const injuries = document.getElementById('injuries').value;
     const petId = document.getElementById('pet_id').value;
     const arrivalStatus = document.getElementById('at_arrival_patient_status').value;
@@ -9,7 +10,7 @@ async function submitForm(event) {
     const contagious = document.getElementById('contagious').checked;
 
     const patientData = {
-        admission: admission,
+        admission: admissionDate,
         injuries: injuries,
         pet_id: petId,
         at_arrival_patient_status: arrivalStatus,

@@ -29,25 +29,33 @@ body {
 }
 
 .container h1 {
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.5em; 
+    color: #4A90E2; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    border-bottom: 2px solid #ddd; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #f0f8ff; 
+    border-radius: 5px;
+    font-size:1.5; 
 }
 
-#patient-list {
+#patients {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
 }
 
-#patient-list li {
+#patients li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     background-color: #f9f9f9;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
 }
+
 
 #patient-list li:hover {
     background-color: var(--primary-color-light);

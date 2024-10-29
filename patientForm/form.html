@@ -9,26 +9,26 @@
 <body>
     <section class="container">
         <h1>Cadastro de Pacientes</h1>
-        <h2>Cadastre aqui o seu Paciente:</h2>
-        <form id="patient-form" method="POST">
+        <form id="patient-form">
+            <h2>Informações do Paciente</h2>
             <div class="form-group">
                 <div class="input-column">
                     <label for="admission"> Data de admissão:</label>
-                    <input type="text" id="admission" name="admission" required>
+                    <input type="datetime-local" id="admission" name="admission" required>
     
                     <label for="injuries"> Lesões:</label>
-                    <input type="text" id="injuries" name="injuries" required>
+                    <input type="text" id="injuries" name="injuries"  placeholder="true or false" required>
     
                     <label for="pet_id"> ID do Pet:</label>
-                    <input type="number" id="pet_id"  name="pet_id">
+                    <input type="number" id="pet_id"  name="pet_id" placeholder="1">
                 </div>
 
                 <div class="input-column">
                     <label for="at_arrival_patient_status">Status do paciente na Chegada:</label>
-                    <input type="text" id="at_arrival_patient_status" name="at_arrival_patient_status" required>
+                    <input type="text" id="at_arrival_patient_status" name="at_arrival_patient_status" placeholder= "G" required>
     
                     <label for="medicated_at_arrival">Medicado na chegada:</label>
-                    <input type="text" id="medicated_at_arrival" name="medicated_at_arrival" required>
+                    <input type="text" id="medicated_at_arrival" name="medicated_at_arrival" placeholder="true or false"  required>
 
                     <div class="contagious-check">
                         <label for="contagious">Contagioso:</label>

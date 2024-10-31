@@ -65,6 +65,43 @@ h2 {
     margin-right: 0;
 }
 
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    appearance: none;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+select option {
+    padding: 10px;
+}
+
+.medicated_with {
+    margin-top: 15px;
+}
+
 label {
     margin-bottom: 5px;
     display: block;
@@ -104,13 +141,60 @@ input[type="datetime-local"]:focus {
     background-color: var(--primary-color-darker);
 }
 
+.medicated_at_arrival {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.medicated_at_arrival input[type="checkbox"] {
+    appearance: none; 
+    width: 17px; 
+    height: 17px; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    background-color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s, border-color 0.3s; 
+    margin-right: 10px; 
+}
+
+.medicated_at_arrival input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.medicated_at_arrival label {
+    font-weight: 700;
+    color: var(--primary-color-darker);
+}
+
+
 .contagious-check {
     display: flex;
     align-items: center;
 }
 
-.contagious-check input {
-    margin-right: 5px;
+.contagious-check input[type="checkbox"] {
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 10px;
+}
+
+.contagious-check input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.contagious-check label {
+    font-weight: 700;
+    color: var(--primary-color-darker);
 }
 
 button a {
